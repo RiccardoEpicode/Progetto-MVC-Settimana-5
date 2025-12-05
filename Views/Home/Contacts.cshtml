@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Contatti - Polizia Municipale";
+}
+
+<!-- ==================== HERO BANNER ==================== -->
+<div class="position-relative">
+    <img src="https://images.pexels.com/photos/995764/pexels-photo-995764.jpeg"
+         class="w-100"
+         style="height:380px; object-fit:cover; filter:brightness(0.6);">
+
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="fw-bold display-5 text-uppercase">Contatti</h1>
+        <p class="lead">Informazioni, numeri utili e assistenza al cittadino</p>
+    </div>
+</div>
+
+<!-- ==================== BREADCRUMB ==================== -->
+<nav aria-label="breadcrumb" class="bg-light py-2 border-bottom">
+    <div class="container">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Contatti</li>
+        </ol>
+    </div>
+</nav>
+
+<!-- ==================== CHI CHIAMARE ==================== -->
+<div class="container my-5">
+    <h2 class="fw-bold text-center mb-4">CHI DEVO CHIAMARE?</h2>
+
+    <p class="text-center mb-4 lead">
+        Se non si tratta di un'emergenza, si prega di utilizzare i contatti appropriati
+        per evitare congestionamento delle linee e garantire assistenza rapida a chi ne ha bisogno.
+    </p>
+
+    <div class="row g-4">
+
+        <!-- EMERGENZE -->
+        <div class="col-md-6">
+            <div class="p-4 border rounded shadow-sm h-100 bg-danger text-white">
+                <h4 class="fw-bold">Emergenze - 112</h4>
+                <p>Per incidenti gravi, pericoli imminenti, aggressioni, incendi o necessità urgente di intervento.</p>
+                <span class="fw-bold">Numero unico europeo: 112</span>
+            </div>
+        </div>
+
+        <!-- CENTRALE OPERATIVA -->
+        <div class="col-md-6">
+            <div class="p-4 border rounded shadow-sm h-100">
+                <h4 class="fw-bold">Centrale Operativa</h4>
+                <p>Per segnalazioni su viabilità, comportamenti pericolosi o intervento sul territorio.</p>
+                <span class="fw-bold">Telefono: 06 1234 5678</span>
+            </div>
+        </div>
+
+        <!-- INFO GENERALI -->
+        <div class="col-md-6">
+            <div class="p-4 border rounded shadow-sm h-100">
+                <h4 class="fw-bold">Informazioni Generali</h4>
+                <p>Per richieste di informazioni, orari, permessi, documenti o smarrimenti.</p>
+                <span class="fw-bold">Telefono: 06 8765 4321</span>
+            </div>
+        </div>
+
+        <!-- SEGNALAZIONI NON URGENTI -->
+        <div class="col-md-6">
+            <div class="p-4 border rounded shadow-sm h-100">
+                <h4 class="fw-bold">Segnalazioni Non Urgenti</h4>
+                <p>Per segnalare problemi di decoro urbano, traffico, veicoli abbandonati o altre criticità.</p>
+                <span class="fw-bold">Email: segnalazioni@poliziamunicipale.it</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================== ORARI E UFFICI ==================== -->
+<div class="bg-light py-5 border-top border-bottom">
+    <div class="container">
+
+        <h2 class="fw-bold mb-4">Uffici e Orari</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Sede Centrale</h5>
+                <p>
+                    Via Roma 100<br />
+                    00100, Città Metropolitana<br />
+                    Tel. 06 1234 5678
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Orari al Pubblico</h5>
+                <p>
+                    Lun – Ven: 08:30 – 13:00<br />
+                    Mar – Gio: 15:00 – 17:00<br />
+                    Sabato e Festivi: chiuso
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Email Ufficiali</h5>
+                <p>
+                    info@poliziamunicipale.it<br />
+                    PEC: protocollopm@pec.it
+                </p>
+            </div>
+
+        </div>
+
+        <a class="btn btn-primary btn-lg mt-4 fw-bold" href="mailto:info@poliziamunicipale.it">
+            Contatta l'Ufficio
+        </a>
+
+    </div>
+</div>
+
+<!-- ==================== NOTE FINALI ==================== -->
+<div class="container my-5">
+    <h4 class="fw-bold">Note Importanti</h4>
+    <p>
+        Le segnalazioni urgenti devono essere effettuate esclusivamente tramite numero di emergenza 112.<br />
+        Le comunicazioni via email non sostituiscono la denuncia formale presso gli uffici di Polizia Municipale.
+    </p>
+</div>

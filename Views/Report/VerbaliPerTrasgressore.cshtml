@@ -1,0 +1,24 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Verbali per trasgressore";
+}
+
+<h2>Totale Verbali per Trasgressore</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Totale Verbali</th>
+    </tr>
+
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td>@r.Nome</td>
+            <td>@r.Cognome</td>
+            <td>@r.TotaleVerbali</td>
+        </tr>
+    }
+</table>

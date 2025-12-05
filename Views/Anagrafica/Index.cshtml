@@ -1,0 +1,31 @@
+﻿@model List<PoliziaMunicipale.Models.Anagrafica>
+
+@{
+    ViewData["Title"] = "Lista Schede Anagrafiche";
+}
+
+<h2>Lista Trasgressori</h2>
+
+<a class="btn btn-primary mb-3" href="/Anagrafica/Create">Nuovo Trasgressore</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>Cognome</th>
+        <th>Nome</th>
+        <th>Indirizzo</th>
+        <th></th>
+    </tr>
+
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.Cognome</td>
+            <td>@a.Nome</td>
+            <td>@a.Indirizzo</td>
+            <td>
+                <a class="btn btn-warning btn-sm" href="/Anagrafica/Edit/@a.IdAnagrafica">Modifica</a>
+                <a class="btn btn-danger btn-sm" href="/Anagrafica/Delete/@a.IdAnagrafica">Elimina</a>
+            </td>
+        </tr>
+    }
+</table>

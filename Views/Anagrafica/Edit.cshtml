@@ -1,0 +1,43 @@
+﻿@model PoliziaMunicipale.Models.Anagrafica
+
+@{
+    ViewData["Title"] = "Correggi Scheda Anagrafica";
+}
+
+<h2>Modifica Trasgressore</h2>
+
+<form method="post">
+    <input type="hidden" name="IdAnagrafica" value="@Model.IdAnagrafica" />
+
+    <div class="form-group">
+        <label>Cognome</label>
+        <input name="Cognome" value="@Model.Cognome" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Nome</label>
+        <input name="Nome" value="@Model.Nome" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Indirizzo</label>
+        <input name="Indirizzo" value="@Model.Indirizzo" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Città</label>
+        <input name="Citta" value="@Model.Citta" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>CAP</label>
+        <input name="CAP" maxlength="5" value="@Model.CAP" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Codice Fiscale</label>
+        <input name="Cod_Fisc" maxlength="16" value="@Model.Cod_Fisc" class="form-control" />
+    </div>
+
+    <button class="btn btn-success mt-3">Aggiorna</button>
+</form>

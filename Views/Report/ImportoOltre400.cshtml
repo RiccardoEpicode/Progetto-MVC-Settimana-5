@@ -1,0 +1,24 @@
+﻿@model List<PoliziaMunicipale.Models.Verbale>
+
+@{
+    ViewData["Title"] = "Report Maggiori di 400";
+}
+
+<h2>Violazioni con importo > 400 €</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Trasgressore</th>
+        <th>Importo</th>
+        <th>Data</th>
+    </tr>
+
+    @foreach (var v in Model)
+    {
+        <tr>
+            <td>@v.Anagrafica.Cognome @v.Anagrafica.Nome</td>
+            <td>@v.Importo €</td>
+            <td>@v.DataViolazione.ToShortDateString()</td>
+        </tr>
+    }
+</table>

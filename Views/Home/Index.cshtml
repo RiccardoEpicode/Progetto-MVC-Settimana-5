@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Polizia Municipale - Home";
+}
+
+<!-- ========================= CAROSELLO ========================= -->
+<div id="policeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#policeCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#policeCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#policeCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/1211646/pexels-photo-1211646.jpeg"
+                 class="d-block w-100" style="height:450px; object-fit:cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                <h2 class="fw-bold">Servizio di Sicurezza Urbana</h2>
+                <p>Supporto al cittadino e tutela della collettività.</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1115680/pexels-photo-1115680.jpeg"
+                 class="d-block w-100" style="height:450px; object-fit:cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                <h2 class="fw-bold">Controllo della Viabilità</h2>
+                <p>Gestione del traffico, incidenti e infrazioni.</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1464218/pexels-photo-1464218.jpeg"
+                 class="d-block w-100" style="height:450px; object-fit:cover;">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                <h2 class="fw-bold">Assistenza al Cittadino</h2>
+                <p>Segnalazioni, informazioni e servizi comunali.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#policeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#policeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- ========================= SEZIONE ICONS ========================= -->
+<div class="container mb-5">
+    <h2 class="text-center fw-bold mb-4">Servizi Principali</h2>
+    <div class="row text-center">
+
+        <div class="col-md-3 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" width="70">
+            <h5 class="mt-3">Segnalazione Problemi</h5>
+            <p>Invia segnalazioni riguardanti sicurezza urbana e viabilità.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/69/69524.png" width="70">
+            <h5 class="mt-3">Violazioni Stradali</h5>
+            <p>Consulta i tipi di violazioni possibili sul territorio comunale.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" width="70">
+            <h5 class="mt-3">Verbali Emessi</h5>
+            <p>Gestione completa dei verbali e delle sanzioni amministrative.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" width="70">
+            <h5 class="mt-3">Traffico e Mobilità</h5>
+            <p>Informazioni su viabilità, zone a traffico limitato e permessi.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========================= CTA BOX ========================= -->
+<div class="bg-primary text-white py-5 mb-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">Hai bisogno di assistenza?</h2>
+        <p class="lead">Consulta i report disponibili o contatta il comando di Polizia Municipale.</p>
+
+        <a asp-controller="Report" asp-action="VerbaliPerTrasgressore"
+           class="btn btn-light btn-lg fw-bold px-4">
+            Vai ai Report
+        </a>
+    </div>
+</div>
+
+<!-- ========================= INFO SECTION ========================= -->
+<div class="container mb-5">
+    <h2 class="fw-bold mb-3">Chi Siamo</h2>
+    <p>
+        La Polizia Municipale opera sul territorio per garantire sicurezza, rispetto delle
+        norme del codice della strada e supporto alla comunità locale.
+        Attraverso questo portale è possibile accedere rapidamente a informazioni,
+        servizi e strumenti utili al cittadino.
+    </p>
+</div>
